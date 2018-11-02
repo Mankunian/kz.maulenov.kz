@@ -25,6 +25,8 @@
 .brand a:visited {
     color: #ffffff;
     text-decoration: none;
+    font-size: 45px;
+    font-family: serif;
 }
 
 .nav-container {
@@ -201,8 +203,100 @@ aside {
     margin-top: 20px;
 }
 
+.mainContent {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 500px;
+    background: #A51C30;
+    color: #fff;
+}
+
+.content {
+    /*margin-top: 20px;*/
+    width: 1170px;
+    margin: 20px auto;
+}
+
 .leftContent {
-    background: cadetblue;
-    height: 100vh;
-    min-height: fit-content;
+    /*background: #1b6d85;*/
+    height: 500px;
+    float: right;
+    padding: 10px;
+    width: 500px;
+}
+
+.rightContent {
+    /*background: #2aabd2;*/
+    height: 500px;
+    float: left;
+    padding: 10px;
+}
+
+.bio {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.bio p.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                     supported by Chrome and Opera */
+}
+
+.section {
+    background: #0f0f0f;
+    height: auto;
+}
+
+.categories {
+    height: 100px;
+    /*background: #3D486C;*/
+    background: rgb(63, 60, 86);
+    border-radius: 3px;
+}
+
+.categories:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Параметры тени */
+}
+
+.categories h2 {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.rubrics {
+    margin-top: 30px;
+}
+
+#rubrics {
+    height: 438px;
+    background: #1B2238;
+    min-height: max-content;
+}
+
+#partners {
+    height: 200px;
+    min-height: max-content;
+    background: #ECF0F1;
+    /*margin-bottom: 100px;*/
+}
+
+.glyphicon {
+    float: right;
+    font-size: -webkit-xxx-large;
+    padding-top: 10px
+}
+
+
+.zz {
+    padding-top: 10px;
 }
