@@ -204,12 +204,12 @@ aside {
 }
 
 .mainContent {
-    width: 100%;
-    position: relative;
-    top: 0;
-    height: 500px;
-    background: #A51C30;
+    background: #344A61;
     color: #fff;
+    margin: 0 auto;
+    float: none;
+    height: 600px;
+
 }
 
 .content {
@@ -219,17 +219,17 @@ aside {
 }
 
 .leftContent {
-    /*background: #1b6d85;*/
     height: 500px;
-    float: right;
+    float: none;
     padding: 10px;
     width: 500px;
+    margin: 0 auto;
 }
 
 .rightContent {
     /*background: #2aabd2;*/
-    height: 500px;
-    float: left;
+    /*height: 500px;*/
+    float: none;
     padding: 10px;
 }
 
@@ -256,8 +256,8 @@ aside {
 
 .categories {
     height: 100px;
-    /*background: #3D486C;*/
-    background: rgb(63, 60, 86);
+    /*background: rgb(63, 60, 86);*/
+    background: rgb(197, 81, 71);
     border-radius: 3px;
 }
 
@@ -279,24 +279,43 @@ aside {
 
 #rubrics {
     height: 438px;
-    background: #1B2238;
+    /*background: #1B2238;*/
+    background: #DD7168;
     min-height: max-content;
 }
 
 #partners {
-    height: 200px;
+    height: 300px;
     min-height: max-content;
-    background: #ECF0F1;
-    /*margin-bottom: 100px;*/
+    background: #33AC99;
 }
 
-.glyphicon {
-    float: right;
-    font-size: -webkit-xxx-large;
-    padding-top: 10px
+.footerSection {
+    border: 2px solid #fff;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.footerSection h3 {
+    font-weight: 600;
+    font-size: 35px;
+    text-align: left;
+    color: #fff;
 }
 
 
-.zz {
-    padding-top: 10px;
+footer{
+    color: white;
+}
+footer a{
+    color: #bfffff;
+}
+footer a:hover{
+    color: white;
+}
+
+.footer-middle{
+    background: #33AC99;
+    padding-top: 2em;
+    color: white;
 }
