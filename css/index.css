@@ -189,22 +189,11 @@ article {
     padding: 10px;
 }
 
-.z {
-    background: #1b6d85;
-    height: 350px;
-}
-
-aside {
-    background: #f0f0f0;
-    padding: 12px;
-    width: 350px;
-    /*float: left;*/
-    /* min-height: 100vh; */
-    margin-top: 20px;
-}
-
 .mainContent {
-    background: #344A61;
+    /*background: #344A61;*/
+    background: -moz-linear-gradient(45deg, rgba(82, 118, 150, 0.77) 0%, rgba(82, 118, 150, 0.77) 1%, rgba(7, 24, 120, 0.69) 97%, rgba(5, 21, 119, 0.69) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(82, 118, 150, 0.77) 0%, rgba(82, 118, 150, 0.77) 1%, rgba(7, 24, 120, 0.69) 97%, rgba(5, 21, 119, 0.69) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(82, 118, 150, 0.77) 0%, rgba(82, 118, 150, 0.77) 1%, rgba(7, 24, 120, 0.69) 97%, rgba(5, 21, 119, 0.69) 100%);
     color: #fff;
     margin: 0 auto;
     float: none;
@@ -212,11 +201,11 @@ aside {
 
 }
 
-.content {
-    /*margin-top: 20px;*/
+/*.content {
+    !*margin-top: 20px;*!
     width: 1170px;
     margin: 20px auto;
-}
+}*/
 
 .leftContent {
     height: 500px;
@@ -249,73 +238,79 @@ aside {
                                      supported by Chrome and Opera */
 }
 
-.section {
-    background: #0f0f0f;
-    height: auto;
+.rubrics {
+    float: none;
+    margin: 0 auto;
+    background: #CF4A4B;
+    height: 120px;
 }
 
-.categories {
-    height: 100px;
-    /*background: rgb(63, 60, 86);*/
-    background: rgb(197, 81, 71);
-    border-radius: 3px;
+.itemRubric {
+    height: 150px;
+    width: 158px;
+    /*background: #fff;*/
+    background: #CF4A4B;
+    border: 0.5px solid #FFFFFF;
 }
 
-.categories:hover {
+.itemRubric:hover {
+    background: #792821;
     cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1); /* Параметры тени */
 }
 
-.categories h2 {
-    padding: 10px;
+.title h4 {
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 160px;
 }
 
-.rubrics {
-    margin-top: 30px;
+.logo {
+    margin: 20px 45px;
 }
 
 #rubrics {
-    height: 438px;
-    /*background: #1B2238;*/
-    background: #DD7168;
+    height: 600px;
+    /*background: #DD7168;*/
+    /*background: -moz-linear-gradient(left, rgba(160,54,54,0.84) 0%, rgba(161,54,53,0.84) 1%, rgba(211,10,0,0.59) 100%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(left, rgba(160,54,54,0.84) 0%,rgba(161,54,53,0.84) 1%,rgba(211,10,0,0.59) 100%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to right, rgba(160,54,54,0.84) 0%,rgba(161,54,53,0.84) 1%,rgba(211,10,0,0.59) 100%);*/
+    background: url("../img/22.jpg") no-repeat fixed center;
     min-height: max-content;
+    filter: brightness(0.6);
 }
 
-#partners {
+#footer {
+    height: 500px;
+    min-height: max-content;
+    /*background: #33AC99;*/
+    /*background: -moz-linear-gradient(left, rgba(51, 172, 153, 0.7) 0%, rgba(107, 186, 112, 0.78) 100%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(left, rgba(51, 172, 153, 0.7) 0%, rgba(107, 186, 112, 0.78) 100%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to right, rgba(51, 172, 153, 0.7) 0%, rgba(107, 186, 112, 0.78) 100%);*/
+
+    background: url("../img/Appointment-backround.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-attachment: scroll;*/
+    background-size: cover;
+
+}
+
+.contact {
     height: 300px;
-    min-height: max-content;
-    background: #33AC99;
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.33);
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-top: 10px;
 }
 
-.footerSection {
-    border: 2px solid #fff;
-    height: 250px;
-    margin-top: 20px;
+.logoFooter {
+    margin: 35px auto;
+    text-align: center;
 }
 
-.footerSection h3 {
-    font-weight: 600;
-    font-size: 35px;
-    text-align: left;
-    color: #fff;
-}
-
-
-footer{
-    color: white;
-}
-footer a{
-    color: #bfffff;
-}
-footer a:hover{
-    color: white;
-}
-
-.footer-middle{
-    background: #33AC99;
-    padding-top: 2em;
-    color: white;
+.infoFooter {
+    text-align: center;
 }
