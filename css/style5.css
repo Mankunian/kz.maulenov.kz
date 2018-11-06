@@ -3,7 +3,6 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -14,7 +13,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #495057;
 }
 
 a, a:hover, a:focus {
@@ -42,7 +41,7 @@ a, a:hover, a:focus {
     width: 100%;
     height: 1px;
     border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
+    margin: 15px 0;
 }
 
 /* ---------------------------------------------------
@@ -55,7 +54,6 @@ a, a:hover, a:focus {
     align-items: stretch;
     perspective: 1500px;
 }
-
 
 #sidebar {
     min-width: 250px;
@@ -91,6 +89,7 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
+
 #sidebar ul li a:hover {
     color: #7386D5;
     background: #fff;
@@ -100,7 +99,6 @@ a, a:hover, a:focus {
     color: #fff;
     background: #6d7fcc;
 }
-
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -143,8 +141,6 @@ a.article, a.article:hover {
     color: #fff !important;
 }
 
-
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -153,6 +149,15 @@ a.article, a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+}
+
+#content p, h2 {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 #sidebarCollapse {
@@ -175,20 +180,20 @@ a.article, a.article:hover {
 #sidebarCollapse span:first-of-type {
     transform: rotate(45deg) translate(2px, 2px);
 }
+
 #sidebarCollapse span:nth-of-type(2) {
     opacity: 0;
 }
+
 #sidebarCollapse span:last-of-type {
     transform: rotate(-45deg) translate(1px, -1px);
 }
-
 
 #sidebarCollapse.active span {
     transform: none;
     opacity: 1;
     margin: 5px auto;
 }
-
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -198,10 +203,12 @@ a.article, a.article:hover {
         margin-left: -250px;
         transform: rotateY(90deg);
     }
+
     #sidebar.active {
         margin-left: 0;
         transform: none;
     }
+
     #sidebarCollapse span:first-of-type,
     #sidebarCollapse span:nth-of-type(2),
     #sidebarCollapse span:last-of-type {
@@ -209,15 +216,19 @@ a.article, a.article:hover {
         opacity: 1;
         margin: 5px auto;
     }
+
     #sidebarCollapse.active span {
         margin: 0 auto;
     }
+
     #sidebarCollapse.active span:first-of-type {
         transform: rotate(45deg) translate(2px, 2px);
     }
+
     #sidebarCollapse.active span:nth-of-type(2) {
         opacity: 0;
     }
+
     #sidebarCollapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
     }
