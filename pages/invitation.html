@@ -1,76 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>МАУЛЕНОВ ДУМАН | ЮРИСТ</title>
 
-    <!-- Bootstrap -->
-    <!--<link rel="stylesheet" href="../css/index.css">-->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/lato.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
-          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <title>Приветсвенное слово</title>
 
-    <style>
-        body {
-            background: url("../img/law.jpg") no-repeat center center fixed;
-            background-size: cover;
-            height: 100%;
-            overflow: hidden;
-        }
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/style5.css">
 
-        .content {
-            height: 95vh;
-            opacity: 0.8;
-            border: 1px solid #847b7b;
-            background: #ffffff;
-            border-radius: 3px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .z {
-            height: 95vh;
-            min-height: max-content;
-            background: #1b6d85;
-            margin: 25px auto;
-            opacity: 0.8;
-            border: 1px solid #847b7b;
-            background: #ffffff;
-            border-radius: 3px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-    </style>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+            integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+            crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+            integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+            crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-3">
-            <div class="col-lg-12 col-sm-12 z">
-                <div class="rubrics">
-                    <h3>РУБРИКИ</h3>
-                    <hr>
+
+<div class="wrapper" style="font-family: monospace">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Думан Мауленов</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Рубрики</p>
+            <!-- <li class="active">
+                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                 <ul class="collapse list-unstyled" id="homeSubmenu">
+                     <li><a href="#">Home 1</a></li>
+                     <li><a href="#">Home 2</a></li>
+                     <li><a href="#">Home 3</a></li>
+                 </ul>
+             </li>-->
+            <li>
+                <a href="../index.html">Главная</a>
+                <a href="invitation.html">Приветсвенное слово</a>
+                <a href="#">Биография</a>
+                <a href="#">Награды и поощрения</a>
+                <a href="#">Фото</a>
+                <a href="#">Научные труды</a>
+                <a href="#">Публикации в СМИ</a>
+                <a href="#">Видео</a>
+                <a href="#">Цитаты</a>
+                <a href="#">Общественная деятельность</a>
+                <a href="#">Сертификаты</a>
+                <a href="#">Иное творчество</a>
+                <a href="#">Научные статьи</a>
+
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <li>
+                <img src="../img/facebook.png" alt="facebook" style="width: 32px">
+                <img src="../img/mail.png" alt="facebook" style="width: 32px">
+                <img src="../img/instagram.png" alt="facebook" style="width: 32px">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <h4>Приветственное слово</h4>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-9 col-md-9">
-            <div class="col-lg-12 col-sm-12 z">
-                <div class="welcome">
-                    <h3>ПРИВЕТСТВЕННОЕ СЛОВО</h3>
-                    <hr>
-                </div>
-            </div>
-        </div>
-        <!--<div class="col-md-10 content" style="margin: 25px auto; float: none">
-            <div class="welcome">
-                <h3>ПРИВЕТСТВЕННОЕ СЛОВО</h3>
-                <hr>
-            </div>
-        </div>-->
+        </nav>
+
+        <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+
+        <div class="line"></div>
     </div>
 </div>
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
 </body>
+
 </html>
