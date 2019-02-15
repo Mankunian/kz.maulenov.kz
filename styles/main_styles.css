@@ -427,9 +427,9 @@ section
 	width: 100%;
 	height: 100%;
 	padding-left: 77px;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-right: 15px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	overflow: hidden;
 }
 .general_info_content_inner
@@ -487,7 +487,7 @@ section
 }
 .social_container
 {
-	margin-top: 13px;
+	margin-top: 26px;
 	padding-left: 38px;
 }
 .social_container ul li:not(:last-child)
