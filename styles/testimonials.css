@@ -539,9 +539,9 @@ section
 	width: 100%;
 	height: 100%;
 	padding-left: 77px;
-	padding-top: 49px;
+	padding-top: 10px;
 	padding-right: 15px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	overflow: hidden;
 }
 .general_info_content_inner
@@ -630,7 +630,7 @@ section
 .main_title_container
 {
 	width: 100%;
-	height: 183px;
+	height: 100px;
 }
 .main_subtitle
 {
