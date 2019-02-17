@@ -654,7 +654,7 @@ section
 	left: -60px;
 	padding-left: 30px;
 	padding-right: 76px;
-	margin-top: 101px;
+	margin-top: 50px;
 	max-height: calc(100% - 183px - 102px);
 }
 .mCS-minimal.mCSB_scrollTools .mCSB_draggerRail, .mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail
@@ -770,7 +770,7 @@ section
 }
 .owl-theme .owl-nav.disabled + .owl-dots
 {
-	margin-top: 45px;
+	margin-top: 10px;
 }
 .owl-theme .owl-dots .owl-dot span
 {
