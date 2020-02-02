@@ -53,7 +53,8 @@
 	}
 	.general_info_image
 	{
-		height: 400px;
+		/*height: 400px;*/
+		height: 330px;
 	}
 	.general_info_content
 	{
@@ -65,7 +66,7 @@
 	}
 	.main_title
 	{
-		font-size: 72px;
+		font-size: 47px;
 	}
 }
 

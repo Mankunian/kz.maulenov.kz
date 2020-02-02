@@ -1,251 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Научные труды</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="vCard template project">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
-    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/portfolio.css">
-    <link rel="stylesheet" type="text/css" href="styles/portfolio_responsive.css">
-</head>
-<body>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="vCard template project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bootstrap-4.1.2/bootstrap.min.css"
+    />
+    <link
+      href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/portfolio.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/portfolio_responsive.css"
+    />
+    <style>
+      .lst {
+        font-size: large;
+        font-family: sans-serif;
+        margin: 35px 0;
+        height: 400px;
+        border: 1px solid;
+        overflow: auto;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="super_container">
+      <!-- Header -->
 
-<div class="super_container">
-
-    <!-- Header -->
-
-    <header class="header">
-        <div class="header_content d-flex flex-row align-items-center justify-content-start">
-            <div class="logo">
-                D<span>.</span>M
-            </div>
-            <div class="main_nav d-flex flex-row align-items-end justify-content-start">
-                <ul class="d-flex flex-row align-items-center justify-content-start">
-                    <li><a href="greeting.html">Приветственное слово</a></li>
-                    <li><a href="bio.html">Биография</a></li>
-                    <li><a href="medal.html">Награды</a></li>
-                    <li><a href="testimonials.html">Цитаты</a></li>
-                    <li><a href="video.html">Видео</a></li>
-                    <li><a href="network.html">Общественная деятельность</a></li>
-                    <li><a href="certificate.html">Сертификаты</a></li>
-                    <li><a href="photo.html">Фото</a></li>
-                    <li><a href="ideas.html">Творчество</a></li>
-                    <li class="active"><a href="research.html">Научные труды</a></li>
-                    <li><a href="newspaper.html">Научные статьи</a></li>
-                    <li><a href="media.html">Публикации в СМИ</a></li>
+      <header class="header">
+        <div
+          class="header_content d-flex flex-row align-items-center justify-content-start"
+        >
+          <div class="logo">
+            D<span>.</span>M
+          </div>
+          <div
+            class="main_nav d-flex flex-row align-items-end justify-content-start"
+          >
+            <ul
+              class="d-flex flex-row align-items-center justify-content-start"
+            >
+              <li><a href="greeting.html">Приветственное слово</a></li>
+              <li><a href="bio.html">Биография</a></li>
+              <li><a href="medal.html">Награды</a></li>
+              <li><a href="testimonials.html">Цитаты</a></li>
+              <li><a href="video.html">Видео</a></li>
+              <li><a href="network.html">Общественная деятельность</a></li>
+              <li><a href="certificate.html">Сертификаты</a></li>
+              <li><a href="photo.html">Фото</a></li>
+              <li><a href="ideas.html">Творчество</a></li>
+              <li class="active">
+                <a href="research.html">Научные труды и статьи</a>
+              </li>
+              <li><a href="media.html">Публикации в СМИ</a></li>
+            </ul>
+          </div>
+          <!-- Menu -->
+          <div class="menu">
+            <div
+              class="menu_content d-flex flex-row align-items-start justify-content-end"
+            >
+              <div class="hamburger ml-auto">menu</div>
+              <div class="menu_nav text-right">
+                <ul>
+                  <li><a href="greeting.html">Приветственное слово</a></li>
+                  <li><a href="bio.html">Биография</a></li>
+                  <li><a href="medal.html">Награды</a></li>
+                  <li><a href="testimonials.html">Цитаты</a></li>
+                  <li><a href="video.html">Видео</a></li>
+                  <li><a href="network.html">Общественная деятельность</a></li>
+                  <li><a href="certificate.html">Сертификаты</a></li>
+                  <li><a href="photo.html">Фото</a></li>
+                  <li><a href="ideas.html">Творчество</a></li>
+                  <li class="active">
+                    <a href="research.html">Научные труды и статьи</a>
+                  </li>
+                  <li><a href="media.html">Публикации в СМИ</a></li>
                 </ul>
+              </div>
             </div>
-            <!-- Menu -->
-            <div class="menu">
-                <div class="menu_content d-flex flex-row align-items-start justify-content-end">
-                    <div class="hamburger ml-auto">menu</div>
-                    <div class="menu_nav text-right">
-                        <ul>
-                            <li><a href="greeting.html">About</a></li>
-                            <li><a href="bio.html">Skills</a></li>
-                            <li><a href="medal.html">Services</a></li>
-                            <li><a href="experience.html">Experience</a></li>
-                            <li><a href="education.html">Education</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <div class="content_container">
-        <div class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start">
-
-            <!-- General Information -->
-            <div class="general_info d-flex flex-xl-column flex-md-row flex-column">
-                <div>
-                    <div class="general_info_image">
-                        <div class="background_image" style="background-image:url(img/profile.jpg)"></div>
-                        <div class="header_button_2">
-                            <a href="#">Available for freelance work</a>
-                            <div class="d-flex flex-column align-items-center justify-content-center"><img
-                                    src="images/download.png" alt=""></div>
-                        </div>
+      <div class="content_container">
+        <div
+          class="main_content_outer d-flex flex-xl-row flex-column align-items-start justify-content-start"
+        >
+          <!-- General Information -->
+          <div
+            class="general_info d-flex flex-xl-column flex-md-row flex-column"
+          >
+            <div>
+              <div class="general_info_image">
+                <div
+                  class="background_image"
+                  style="background-image:url(img/profile.jpg)"
+                ></div>
+              </div>
+            </div>
+            <div class="general_info_content">
+              <div
+                class="general_info_content_inner mCustomScrollbar"
+                data-mcs-theme="minimal-dark"
+              >
+                <div class="general_info_title">Общая информация</div>
+                <ul class="general_info_list">
+                  <li
+                    class="d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <div
+                      class="general_info_icon d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <img src="img/icon_8.png" alt="" />
                     </div>
-                </div>
-                <div class="general_info_content">
-                    <div class="general_info_content_inner mCustomScrollbar" data-mcs-theme="minimal-dark">
-                        <div class="general_info_title">Общая информация</div>
-                        <ul class="general_info_list">
-                            <li class="d-flex flex-row align-items-center justify-content-start">
-                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-                                    <img src="img/icon_8.png" alt=""></div>
-                                <div class="general_info_text">Имя: <span>  Думан Мауленов</span></div>
-                            </li>
-                            <li class="d-flex flex-row align-items-center justify-content-start">
-                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-                                    <img src="img/icon_1.png" alt="">
-                                </div>
 
-                                <div class="general_info_text">Местоположение: <span> г. Тараз</span></div>
-                            </li>
-                            <li class="d-flex flex-row align-items-center justify-content-start">
-                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-                                    <img src="img/icon_2.png" alt=""></div>
-                                <div class="general_info_text">Дата рождения: <span> 15.06.1980</span></div>
-                            </li>
-                            <li class="d-flex flex-row align-items-center justify-content-start">
-                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-                                    <img src="img/icon_3.png" alt=""></div>
-                                <div class="general_info_text"><a href="mailto:contact@linque.com?subject=Job_Inquiry">duman80@bk.ru</a>
-                                </div>
-                            </li>
-                            <li class="d-flex flex-row align-items-center justify-content-start">
-                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-                                    <img src="img/icon_5.png" alt=""></div>
-                                <div class="general_info_text"><a target="_blank" href="http://maulenov.kz">www.maulenov.kz</a>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <!-- Social -->
-                        <div class="social_container">
-                            <ul class="d-flex flex-row align-items-start justify-content-start">
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <!--<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-                            </ul>
-                        </div>
+                    <div class="general_info_text">
+                      Имя: <span> Думан Мауленов</span>
                     </div>
+                  </li>
+                  <li
+                    class="d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <div
+                      class="general_info_icon d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <img src="img/icon_1.png" alt="" />
+                    </div>
+
+                    <div class="general_info_text">
+                      Местоположение: <span> г. Тараз</span>
+                    </div>
+                  </li>
+                  <li
+                    class="d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <div
+                      class="general_info_icon d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <img src="img/icon_2.png" alt="" />
+                    </div>
+
+                    <div class="general_info_text">
+                      Дата рождения: <span> 15.06.1980</span>
+                    </div>
+                  </li>
+                  <li
+                    class="d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <div
+                      class="general_info_icon d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <img src="img/icon_3.png" alt="" />
+                    </div>
+
+                    <div class="general_info_text">
+                      <a href="mailto:contact@linque.com?subject=Job_Inquiry"
+                        >duman80@bk.ru</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                    class="d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <div
+                      class="general_info_icon d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <img src="img/icon_5.png" alt="" />
+                    </div>
+
+                    <div class="general_info_text">
+                      <a target="_blank" href="http://maulenov.kz"
+                        >www.maulenov.kz</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Social -->
+                <div class="social_container">
+                  <ul
+                    class="d-flex flex-row align-items-start justify-content-start"
+                  >
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <!--<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+                  </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+
+          <div class="main_content">
+            <div
+              class="main_title_container d-flex flex-column align-items-start justify-content-end"
+            >
+              <!--<div class="main_subtitle">What I am good at</div>-->
+              <div class="main_title">Научные труды</div>
             </div>
 
-            <!-- Main Content -->
+            <!--<div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
 
-            <div class="main_content">
-                <div class="main_title_container d-flex flex-column align-items-start justify-content-end">
-                    <!--<div class="main_subtitle">What I am good at</div>-->
-                    <div class="main_title">Научные труды</div>
-                </div>
-
-                <!-- Sorting -->
-                <!--<div class="portfolio_categories button-group filters-button-group">
-                    <ul>
-                        <li class="portfolio_category active is-checked" data-filter="*">All</li>
-                        <li class="portfolio_category" data-filter=".p_design">Design</li>
-                        <li class="portfolio_category" data-filter=".p_photography">Photography</li>
-                        <li class="portfolio_category" data-filter=".p_brand">Brand Identity</li>
-                    </ul>
-                </div>
-
-                <div class="main_content_scroll mCustomScrollbar" data-mcs-theme="minimal-dark">
-                    <div class="portfolio_grid grid clearfix">
-
-                        &lt;!&ndash; Portfolio Item &ndash;&gt;
-                        <div class="grid-item portfolio_item p_design">
-                            <img src="img/portfolio/1.JPG" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Design</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        &lt;!&ndash; Portfolio Item &ndash;&gt;
-                        <div class="grid-item portfolio_item p_photography">
-                            <img src="img/portfolio/2.JPG" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Photography</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        &lt;!&ndash; Portfolio Item &ndash;&gt;
-                        <div class="grid-item portfolio_item p_brand">
-                            <img src="img/portfolio/3.JPG" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Brand Identity</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        &lt;!&ndash; Portfolio Item &ndash;&gt;
-                        <div class="grid-item portfolio_item p_design">
-                            <img src="img/portfolio/4.JPG" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Design</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        &lt;!&ndash; Portfolio Item &ndash;&gt;
-                        <div class="grid-item portfolio_item p_photography">
-                            <img src="img/portfolio/5.jpg" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Photography</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        &lt;!&ndash; Portfolio Item &ndash;&gt;
-                        <div class="grid-item portfolio_item p_brand">
-                            <img src="img/portfolio/6.JPG" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Brand Identity</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item portfolio_item p_brand">
-                            <img src="img/portfolio/7.jpg" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Brand Identity</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item portfolio_item p_brand">
-                            <img src="img/portfolio/8.JPG" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Brand Identity</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item portfolio_item p_brand">
-                            <img src="img/portfolio/9.JPG" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Brand Identity</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-
-                        <div class="grid-item portfolio_item p_brand">
-                            <img src="img/portfolio/10.jpg" alt="">
-                            <div class="portfolio_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="portfolio_item_title">Brand Identity</div>
-                                <div class="portfolio_item_link"><a href="#">See More</a></div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>-->
-            </div>
+            <ul class="lst">
+              <li><a href="pdf/1.pdf" target="_blank">2 том Материалы</a></li>
+              <li>
+                <a href="pdf/2.pdf" target="_blank">7-8.11.2008 ж Туркистан</a>
+              </li>
+              <li><a href="pdf/3.pdf" target="_blank">09.11.2007 ж</a></li>
+              <li><a href="pdf/4.pdf" target="_blank">22-23 января,2010</a></li>
+              <li><a href="pdf/5.pdf" target="_blank">28.08.2015 ж</a></li>
+              <li>
+                <a href="pdf/6.pdf" target="_blank">28-29 наурыз 2012 жыл</a>
+              </li>
+              <li><a href="pdf/7.pdf" target="_blank">29.11.2012 ж</a></li>
+              <li>
+                <a href="pdf/8.pdf" target="_blank">29-30 октября, 2007 жыл</a>
+              </li>
+              <li>
+                <a href="pdf/9.pdf" target="_blank">Жас галым - 2009 жыл</a>
+              </li>
+              <li><a href="pdf/10.pdf" target="_blank">Жас ғалым - 2009</a></li>
+              <li><a href="pdf/11.pdf" target="_blank">ЗАН ЖАНЕ ЗАМАН</a></li>
+              <li>
+                <a href="pdf/12.pdf" target="_blank"
+                  >Казахский Гуманитарно Юридический Университет 2008 г</a
+                >
+              </li>
+              <li>
+                <a href="pdf/13.pdf" target="_blank">материал 04. 2013</a>
+              </li>
+              <li>
+                <a href="pdf/14.pdf" target="_blank"
+                  >Нацирнальная система 2007</a
+                >
+              </li>
+              <li>
+                <a href="pdf/15.pdf" target="_blank"
+                  >Право и государство 2009 г</a
+                >
+              </li>
+              <li><a href="pdf/16.pdf" target="_blank">Тараз - 2008</a></li>
+              <li>
+                <a href="pdf/17.pdf" target="_blank"
+                  >Шайкеновские чтения 2015г</a
+                >
+              </li>
+              <li><a href="pdf/18.pdf" target="_blank">№1 2006 ВЕСТНИК</a></li>
+              <li>
+                <a href="pdf/19.pdf" target="_blank">№1 2006 ВЕСТНИК (1)</a>
+              </li>
+              <li>
+                <a href="pdf/20.pdf" target="_blank">№1 2010 РЕБЕНОК и ПРАВО</a>
+              </li>
+              <li><a href="pdf/21.pdf" target="_blank">№1 2017 ВЕСТНИК</a></li>
+              <li><a href="pdf/22.pdf" target="_blank">№2 2016 ЗАНГЕР</a></li>
+              <li><a href="pdf/23.pdf" target="_blank">№4 2017 ЗАН</a></li>
+              <li>
+                <a href="pdf/24.pdf" target="_blank">№6 ЗАН ЖАНЕ ЗАМАН</a>
+              </li>
+              <li>
+                <a href="pdf/25.pdf" target="_blank">№6 2007 ЗАН ЖАНЕ ЗАМАН</a>
+              </li>
+              <li><a href="pdf/26.pdf" target="_blank">№6 2017 ЗАН</a></li>
+              <li><a href="pdf/27.pdf" target="_blank">№7 2015 ЗАНГЕР</a></li>
+            </ul>
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap-4.1.2/popper.js"></script>
-<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
-<script src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="plugins/Isotope/fitcolumns.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/portfolio.js"></script>
-</body>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="styles/bootstrap-4.1.2/popper.js"></script>
+    <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+    <script src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+    <script src="plugins/easing/easing.js"></script>
+    <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+    <script src="plugins/Isotope/fitcolumns.js"></script>
+    <script src="plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="js/portfolio.js"></script>
+  </body>
 </html>

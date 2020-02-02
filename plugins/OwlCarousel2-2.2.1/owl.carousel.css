@@ -57,7 +57,8 @@
 {
     position: relative;
     min-height: 1px;
-    width: 100%;
+    /*width: 100%;*/
+    width: 320px;
     height: 100%;
     float: left;
     -webkit-backface-visibility: hidden;
