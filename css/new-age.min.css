@@ -19,7 +19,8 @@ a {
 }
 
 a:focus, a:hover {
-    color: #fcbd20
+		color: #fcbd20;
+		text-decoration: none;
 }
 
 hr {
@@ -154,10 +155,20 @@ header.masthead {
     width: 100%;
     padding-top: 150px;
     padding-bottom: 100px;
-    color: #fff;
-    background: url(../img/bg-pattern.png), #7b4397;
-    background: url(../img/bg-pattern.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-    background: url(../img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430)
+		color: #fff;
+		/* background-image: url(../img/Website-Design-Background.png); */
+		/* background: url(../img/111.jpg) no-repeat; */
+
+
+		background: url(../img/Website-Design-Background.png) no-repeat center center fixed; 
+		/* background: url(../img/lawyer-background-5.jpg) no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    /* background: url(../img/bg-pattern.png), #7b4397; */
+    /* background: url(../img/bg-pattern.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430)); */
+    /* background: url(../img/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430) */
 }
 
 header.masthead .header-content {
