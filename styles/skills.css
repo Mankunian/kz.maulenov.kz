@@ -560,7 +560,7 @@ section {
   height: 100%;
   padding-left: 82px;
   padding-right: 30px;
-
+  overflow-y: scroll;
   padding-top: 15px;
 }
 .main_title_container {
