@@ -575,6 +575,7 @@ section {
 .menu_content {
   width: 100%;
   height: 100%;
+  /* min-height: max-content; */
   padding-top: 10px;
 }
 .menu_nav {

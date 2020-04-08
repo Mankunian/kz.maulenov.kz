@@ -271,7 +271,9 @@
 	.menu.active,
 	.header.scrolled .menu.active
 	{
-		bottom: -310px;
+		/* bottom: -310px; */
+		bottom: -368px;
+    	height: 465px;
 	}
 	.hamburger
 	{
@@ -301,15 +303,15 @@
 	}
 	.main_title_container
 	{
-		height: 153px;
+		/* height: 153px; */
 	}
 	.main_title
 	{
-		font-size: 36px;
+		font-size: 35px;
 	}
 	.main_subtitle
 	{
-		font-size: 18px;
+		font-size: 17px;
 	}
 	.about_title
 	{
