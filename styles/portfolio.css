@@ -554,7 +554,7 @@ section {
 }
 
 .main_content {
-  overflow-y: auto;
+  /* overflow-y: auto; */
   width: calc(100% - 473px);
   height: 100%;
   padding-left: 82px;
