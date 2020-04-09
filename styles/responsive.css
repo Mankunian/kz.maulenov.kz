@@ -307,15 +307,16 @@
 	}
 	.main_title
 	{
-		font-size: 35px;
+		font-size: 28px;
 	}
 	.main_subtitle
 	{
-		font-size: 17px;
+		font-size: 14px;
+    font-weight: 600;
 	}
 	.about_title
 	{
-		font-size: 24px;
+		font-size: 22px;
 	}
 }
 

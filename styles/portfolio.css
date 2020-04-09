@@ -554,10 +554,11 @@ section {
 }
 
 .main_content {
-  /* overflow-y: auto; */
+  overflow-y: auto;
   width: calc(100% - 473px);
   height: 100%;
-  padding-left: 82px;
+  /* padding-left: 82px; */
+  padding-left: 20px;
   padding-right: 30px;
   padding-top: 15px;
 }
