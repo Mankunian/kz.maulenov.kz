@@ -23,6 +23,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
 	<script src="index.js"></script>
 
+	<!-- Angular-translate -->
+	<script src="js/translate/angular-translate.js"></script>
+	<!-- <script src="js/translate/angular-translate.min.js"></script> -->
+
 
 	<!-- Custom styles for this template -->
 	<link href="css/new-age.min.css" rel="stylesheet">
@@ -52,12 +56,9 @@
 					</li>
 				</ul> -->
 				<div class="navbar-nav ml-auto">
-					<select style="border-radius: 2px;">
-						<!-- <option value="phone"> Русский</option>
-						<option value="email"> Қазақша</option> -->
-						<option ng-repeat="lang in langList" value="{{lang.name}}">{{lang.name}}</option>
 
-					</select>
+					<select ng-options="lang as lang.name for lang in langList" ng-model="lang"
+						ng-change="changeLang(lang)"></select>
 				</div>
 			</div>
 		</div>
@@ -69,8 +70,7 @@
 				<div class="col-lg-7 my-auto">
 					<div class="header-content mx-auto">
 						<blockquote>
-							<h1 style="font-size: 42px" class="mb-5">Наука должна быть весёлая, увлекательная и простая. Таковыми же
-								должны быть и ученые</h1>
+							<h1 style="font-size: 42px" class="mb-5">{{ "TITLE" | translate}}</h1>
 							<h3>- Петр Капица <span style="font-style: italic">физик</span></h3>
 							<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><b>Подробнее</b></a>
 						</blockquote>
