@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="mainApp" lang="en">
 
 <head>
 
@@ -20,6 +20,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="index.js"></script>
+
 
 	<!-- Custom styles for this template -->
 	<link href="css/new-age.min.css" rel="stylesheet">
@@ -30,7 +33,7 @@
 <body id="page-top">
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+	<nav ng-controller="navCtrl" class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand js-scroll-trigger" href="#page-top">DM</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -40,14 +43,22 @@
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
+				<!-- <ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 						<img src="img/russia.png" alt="russia" style="width: 100%;max-width: 40px;">
 					</li>
 					<li class="nav-item">
 						<img src="img/kazakhstan.png" alt="kz" style="width: 100%;max-width: 40px;">
 					</li>
-				</ul>
+				</ul> -->
+				<div class="navbar-nav ml-auto">
+					<select style="border-radius: 2px;">
+						<!-- <option value="phone"> Русский</option>
+						<option value="email"> Қазақша</option> -->
+						<option ng-repeat="lang in langList" value="{{lang.name}}">{{lang.name}}</option>
+
+					</select>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -63,7 +74,6 @@
 							<h3>- Петр Капица <span style="font-style: italic">физик</span></h3>
 							<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><b>Подробнее</b></a>
 						</blockquote>
-
 					</div>
 				</div>
 				<div class="col-lg-5 my-auto">
