@@ -47,19 +47,19 @@
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<!-- <ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<img src="img/russia.png" alt="russia" style="width: 100%;max-width: 40px;">
+						<img ng-click="changeLang('ru')" ng-model="checkedRu" src="img/russia.png" alt="russia"
+							style="width: 100%;max-width: 40px;">
 					</li>
 					<li class="nav-item">
-						<img src="img/kazakhstan.png" alt="kz" style="width: 100%;max-width: 40px;">
+						<img ng-click="changeLang('kz')" src="img/kazakhstan.png" alt="kz" style="width: 100%;max-width: 40px;">
 					</li>
-				</ul> -->
-				<div class="navbar-nav ml-auto">
-
+				</ul>
+				<!-- <div class="navbar-nav ml-auto">
 					<select ng-options="lang as lang.name for lang in langList" ng-model="lang"
 						ng-change="changeLang(lang)"></select>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</nav>
@@ -70,9 +70,10 @@
 				<div class="col-lg-7 my-auto">
 					<div class="header-content mx-auto">
 						<blockquote>
-							<h1 style="font-size: 42px" class="mb-5">{{ "TITLE" | translate}}</h1>
-							<h3>- Петр Капица <span style="font-style: italic">физик</span></h3>
-							<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><b>Подробнее</b></a>
+
+							<h1 style="font-size: 26px" class="mb-5">{{ "TITLE1" | translate}} <br>
+								{{"TITLE2" | translate}} <br> {{"TITLE3" | translate}} <br> <span>{{"TITLE4" | translate}}</span></h1>
+							<h3>- {{"AUTHOR" | translate}}</h3>
 						</blockquote>
 					</div>
 				</div>
@@ -107,7 +108,7 @@
 									<div class="feature-item">
 										<!--<i class="icon-screen-smartphone text-primary"></i>-->
 										<img src="img/rubrics/invitation%20(2).png" alt="">
-										<h3>Приветственное слово</h3>
+										<h3>{{"PRIVET" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -115,7 +116,7 @@
 								<a href="bio.html">
 									<div class="feature-item">
 										<img src="img/rubrics/vita.png" alt="">
-										<h3>Биография</h3>
+										<h3>{{"BIO" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -123,7 +124,7 @@
 								<a href="medal.html">
 									<div class="feature-item">
 										<img src="img/rubrics/medal.png" alt="">
-										<h3>Награды и поощрения</h3>
+										<h3>{{"MEDAL" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -131,7 +132,7 @@
 								<a href="testimonials.html">
 									<div class="feature-item">
 										<img src="img/rubrics/testimonial.png" alt="">
-										<h3>Цитаты</h3>
+										<h3>{{"TESTIMONIALS" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -139,7 +140,7 @@
 								<a href="video.html">
 									<div class="feature-item">
 										<img src="img/rubrics/play-button.png" alt="">
-										<h3>Видео</h3>
+										<h3>{{"VIDEO" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -147,7 +148,7 @@
 								<a href="network.html">
 									<div class="feature-item">
 										<img src="img/rubrics/network.png" alt="">
-										<h3>Общественная деятельность</h3>
+										<h3>{{"NETWORK" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -159,7 +160,7 @@
 									<div class="feature-item">
 										<!--<i class="icon-screen-smartphone text-primary"></i>-->
 										<img src="img/rubrics/winner.png" alt="">
-										<h3>Сертификаты</h3>
+										<h3>{{"CERTIFICATE" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -167,7 +168,7 @@
 								<a href="photo.html">
 									<div class="feature-item">
 										<img src="img/rubrics/photo-camera.png" alt="">
-										<h3>Фото</h3>
+										<h3>{{"PHOTO" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -175,7 +176,7 @@
 								<a href="ideas.html">
 									<div class="feature-item">
 										<img src="img/rubrics/ideas.png" alt="">
-										<h3>Иное творчество</h3>
+										<h3>{{"IDEAS" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -183,15 +184,15 @@
 								<a href="research.html">
 									<div class="feature-item">
 										<img src="img/rubrics/research.png" alt="">
-										<h3>Научные труды</h3>
+										<h3>{{"RESEARCH" | translate}}</h3>
 									</div>
 								</a>
 							</div>
 							<div class=" col-xl-2 col-lg-4 col-md-6">
-								<a href="newspaper.html">
+								<a href="research.html">
 									<div class="feature-item">
 										<img src="img/rubrics/folded-newspaper.png" alt="">
-										<h3>Научные статьи</h3>
+										<h3>{{"NEWSPAPER" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -199,7 +200,7 @@
 								<a href="media.html">
 									<div class="feature-item">
 										<img src="img/rubrics/laptop.png" alt="">
-										<h3>Публикации в СМИ</h3>
+										<h3>{{"MEDIA" | translate}}</h3>
 									</div>
 								</a>
 							</div>
@@ -214,7 +215,7 @@
 
 	<section class="contact bg-primary" id="contact">
 		<div class="container">
-			<h2>Контактные данные</h2>
+			<h2>{{"CONTACTS" | translate}}</h2>
 			<div class="row">
 				<div class="col-lg-12" style="display: contents">
 					<div class="col-lg-4">
@@ -223,10 +224,10 @@
 								<img src="img/placeholder.png" alt="">
 							</div>
 							<div class="infoFooter">
-								<h3>Мы находимся</h3>
+								<h3>{{"ADDRESS_TITLE" | translate}}</h3>
 								<br>
-								<h4>080012, г. Тараз</h4>
-								<h4>ул. Т.Акбозов, 27</h4>
+								<h4>080012, {{"ADDRESS_CITY" | translate}}</h4>
+								<h4>{{"ADDRESS" | translate}}</h4>
 							</div>
 						</div>
 					</div>
@@ -236,7 +237,7 @@
 								<img src="img/mail.png" alt="">
 							</div>
 							<div class="infoFooter">
-								<h3>Свяжитесь с нами по электронной почте</h3>
+								<h3>{{"MAIL" | translate}}</h3>
 								<br>
 								<h4><a style="color: #fff" href="mailto:duman80@bk.ru?Subject=Hello%20again" target="_top">duman80@bk.ru
 									</a>
@@ -250,7 +251,7 @@
 								<img src="img/user.png" alt="">
 							</div>
 							<div class="infoFooter">
-								<h3>Подписывайтесь в соц.сетях</h3>
+								<h3>{{"SOCIAL" | translate}}</h3>
 								<br>
 								<a target="_blank" href="https://www.facebook.com/duman.maulenov.1"><img src="img/facebook.png"
 										alt="facebook" style="width: 40px"></a>
