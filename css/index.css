@@ -313,3 +313,8 @@ article {
     text-align: center;
 }
 
+li .lang{
+	margin-right: 10px;
+    border: 1px solid;
+    padding: 2px;
+}

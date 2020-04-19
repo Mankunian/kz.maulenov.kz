@@ -13,7 +13,7 @@ app.config(function	($translateProvider){
 		"TESTIMONIALS": 'Цитаты',
 		"VIDEO": 'Видео',
 		"NETWORK": 'Общественная деятельность',
-		"CERTIFICATE": 'Сертификаты',
+		"CERTIFICATE": 'Сертификаты и дипломы',
 		"PHOTO": 'Фото',
 		"IDEAS": 'Иное творчество',
 		"RESEARCH": 'Научные труды',
