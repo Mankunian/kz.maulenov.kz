@@ -73,4 +73,5 @@ app.controller('navCtrl', function($scope, $translate) {
 		$translate.use(key)
 		// $translate.use(key.code)
 	}
+
 })
