@@ -56,22 +56,26 @@ app.config(function	($translateProvider){
 	$translateProvider.preferredLanguage('ru');
 })
 
-app.controller('navCtrl', function($scope, $translate) {
+app.controller('navCtrl', function($scope, $translate, $window) {
 	$scope.ruLang = $translate.use('ru').$$state.value
 	console.log($scope.ruLang)
 
-	$scope.langList = [
-					{id: 1, name: 'Русский', code: 'ru'},
-					{id: 2, name: 'Қазақша', code: 'kz'}
-				]
-
 	$scope.changeLang = function(key) {
-		if (key == 'ru') {
-			$scope.ruLang = key;
-		}
+		$scope.langName = key;
 		console.log(key)
 		$translate.use(key)
-		// $translate.use(key.code)
+	
 	}
 
+	// $scope.handleAction = function() {
+	// 	$window.location.href = '/greeting.html';
+		
+	// }
+
+	
+
+})
+
+app.controller('secondPageCtrl', function ($scope, $translate, $window) {
+	console.log('asdasdasdasd')
 })
