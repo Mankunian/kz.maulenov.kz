@@ -53,3 +53,10 @@ section.features .feature-item{
 .main_content{
     overflow-y: scroll;
 }
+
+a.lang:hover{
+	/* background-color: red; */
+	color: yellow !important;
+	cursor: pointer;
+	/* font-size: larger; */
+}

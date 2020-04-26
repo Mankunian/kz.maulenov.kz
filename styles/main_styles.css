@@ -299,8 +299,8 @@ section {
 }
 .main_nav ul li a {
   display: block;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
   line-height: 59px;
   color: #ffffff;
   font-size: 10px;
@@ -436,8 +436,8 @@ section {
   color: #ffffff;
 }
 .social_container {
-  margin-top: 26px;
-  padding-left: 38px;
+  margin-top: 13px;
+  /* padding-left: 38px; */
 }
 .social_container ul li:not(:last-child) {
   margin-right: 28px;

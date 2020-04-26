@@ -1,6 +1,9 @@
 var app = angular.module('mainApp', ['pascalprecht.translate']);
 
+
 app.config(function	($translateProvider){
+
+	
 	$translateProvider.translations('ru', {
 		"TITLE1": 'Наука должна быть весёлая,',
 		"TITLE2": 'увлекательная и простая.',
@@ -56,26 +59,26 @@ app.config(function	($translateProvider){
 	$translateProvider.preferredLanguage('ru');
 })
 
-app.controller('navCtrl', function($scope, $translate, $window) {
+app.controller('navCtrl', function($scope, $translate) {
 	$scope.ruLang = $translate.use('ru').$$state.value
 	console.log($scope.ruLang)
 
 	$scope.changeLang = function(key) {
 		$scope.langName = key;
 		console.log(key)
-		$translate.use(key)
-	
+		$translate.use(key)		
 	}
-
-	// $scope.handleAction = function() {
-	// 	$window.location.href = '/greeting.html';
-		
-	// }
-
-	
-
 })
 
-app.controller('secondPageCtrl', function ($scope, $translate, $window) {
-	console.log('asdasdasdasd')
+app.controller('pageCtrl', function($scope, $translate) {
+	$scope.ruLang = $translate.use('ru').$$state.value
+	console.log($scope.ruLang)
+
+	$scope.changeLang = function(key) {
+
+		
+		$scope.langName = key;
+		console.log(key)
+		$translate.use(key)		
+	}
 })

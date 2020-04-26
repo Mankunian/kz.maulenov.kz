@@ -2,7 +2,7 @@
 <html ng-app="mainApp" lang="en">
 
 <head>
-	<title>Приветсвенное слово</title>
+	<title>{{"PRIVET" | translate}}</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="vCard template project">
@@ -12,9 +12,17 @@
 	<link rel="stylesheet" type="text/css" href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="index.js"></script>
+
+	<!-- Angular-translate -->
+	<script src="js/translate/angular-translate.js"></script>
 </head>
 
-<body ng-controller="navCtrl">
+<body ng-controller="pageCtrl">
 
 	<div class="super_container">
 
@@ -30,18 +38,18 @@
 				</div>
 				<div class="main_nav d-flex flex-row align-items-end justify-content-start">
 					<ul class="d-flex flex-row align-items-center justify-content-start">
-						<li class="active"><a href="greeting.html">Приветственное слово</a></li>
-						<li><a href="bio.html">Биография</a></li>
-						<li><a href="medal.html">Награды</a></li>
-						<li><a href="testimonials.html">Цитаты</a></li>
-						<li><a href="video.html">Видео</a></li>
-						<li><a href="network.html">Общественная деятельность</a></li>
-						<li><a href="certificate.html">Сертификаты</a></li>
-						<li><a href="photo.html">Фото</a></li>
-						<li><a href="ideas.html">Творчество</a></li>
-						<li><a href="research.html">Научные труды и статьи</a></li>
+						<li class="active"><a href="greeting.html">{{"PRIVET" | translate}}</a></li>
+						<li><a href="bio.html">{{"BIO" | translate}}</a></li>
+						<li><a href="medal.html">{{"MEDAL" | translate}}</a></li>
+						<li><a href="testimonials.html">{{"TESTIMONIALS" | translate}}</a></li>
+						<li><a href="video.html">{{"VIDEO" | translate}}</a></li>
+						<li><a href="network.html">{{"NETWORK" | translate}}</a></li>
+						<li><a href="certificate.html">{{"CERTIFICATE" | translate}}</a></li>
+						<li><a href="photo.html">{{"PHOTO" | translate}}</a></li>
+						<li><a href="ideas.html">{{"IDEAS" | translate}}</a></li>
+						<li><a href="research.html">{{"RESEARCH" | translate}}</a></li>
 						<!--<li><a href="newspaper.html">Научные статьи</a></li>-->
-						<li><a href="media.html">Публикации в СМИ</a></li>
+						<li><a href="media.html">{{"MEDIA" | translate}}</a></li>
 					</ul>
 				</div>
 				<!-- Menu -->
@@ -84,7 +92,8 @@
 					<div class="general_info_content">
 						<div class="general_info_content_inner mCustomScrollbar" data-mcs-theme="minimal-dark">
 							<div class="general_info_title">Общая информация</div>
-							<ul class="general_info_list">
+
+							<!-- <ul class="general_info_list">
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
 										<img src="img/icon_8.png" alt=""></div>
@@ -109,29 +118,33 @@
 											href="mailto:contact@linque.com?subject=Job_Inquiry">duman80@bk.ru</a>
 									</div>
 								</li>
-								<!--<li class="d-flex flex-row align-items-center justify-content-start">
-                                <div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-                                    <img src="img/icon_4.png" alt=""></div>
-                                <div class="general_info_text">+76 6524 567862 763</div>
-                            </li>-->
+							
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div class="general_info_icon d-flex flex-column align-items-start justify-content-center">
 										<img src="img/icon_5.png" alt=""></div>
 									<div class="general_info_text"><a target="_blank" href="http://maulenov.kz">www.maulenov.kz</a>
 									</div>
 								</li>
-							</ul>
+							</ul> -->
 
 							<!-- Social -->
 							<div class="social_container">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
-									<li><a
+									<!-- <li><a
 											href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fduman_maulenov%3Futm_source%3Dig_profile_share%26igshid%3D1szcs1mbichnl&cc_key="><i
-												class="fa fa-instagram" aria-hidden="true"></i></a></li>
-									<!--<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
+												class="fa fa-language" aria-hidden="true"></i></a>
+									</li>
+
 									<li><a href="https://www.facebook.com/duman.maulenov.1"><i class="fa fa-facebook"
-												aria-hidden="true"></i></a></li>
-									<!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+												aria-hidden="true"></i></a>
+									</li> -->
+									<li>
+										<a ng-model="checkedLang" ng-click="changeLang('kz')" class="lang">Қазақша</a>
+									</li>
+									<li>
+										<a ng-model="checkedLang" ng-click="changeLang('ru')" class="lang">Русский</a>
+									</li>
+
 								</ul>
 							</div>
 						</div>
@@ -144,6 +157,7 @@
 					<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
 						<div class="main_subtitle">Судья / Кандидат юридических наук</div>
 						<div class="main_title">Думан Мауленов</div>
+
 					</div>
 					<div class="about_content">
 						<div class="about_title">Приветственное слово</div>
