@@ -500,7 +500,8 @@ section {
   color: #100f3a;
 }
 .about_text {
-  margin-top: 31px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 .loaders {
   margin-top: 98px;
