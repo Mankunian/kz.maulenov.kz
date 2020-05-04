@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="mainApp" lang="en">
 
 <head>
 	<title>Биография</title>
@@ -12,9 +12,16 @@
 	<link rel="stylesheet" type="text/css" href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" />
 	<link rel="stylesheet" type="text/css" href="styles/skills.css" />
 	<link rel="stylesheet" type="text/css" href="styles/skills_responsive.css" />
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="index.js"></script>
+
+	<!-- Angular-translate -->
+	<script src="js/translate/angular-translate.js"></script>
 </head>
 
-<body>
+<body ng-controller="pageCtrl">
 	<div class="super_container">
 		<!-- Header -->
 
@@ -145,7 +152,7 @@
 				<div class="main_content">
 					<div class="main_title_container d-flex flex-column align-items-start justify-content-end">
 						<!--<div class="main_subtitle">What I am good at</div>-->
-						<div class="main_title">Биография</div>
+						<div class="main_title">{{"BIO" | translate}}</div>
 					</div>
 					<div class="skills">
 						<div class="skills_text">
