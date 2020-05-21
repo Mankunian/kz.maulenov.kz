@@ -22,7 +22,7 @@ app.config(function	($translateProvider){
 		"RESEARCH": 'Научные труды',
 		"NEWSPAPER": 'Научные статьи',
 		"MEDIA": 'Публикации в СМИ',
-		"CONTACTS": 'Контактные данные',
+		"CONTACTS": 'Контактные данные.',
 		"ADDRESS_TITLE": 'Мы находимся',
 		"ADDRESS_CITY": 'г. Тараз',
 		"ADDRESS": 'ул. Т.Акбозов, 27',
